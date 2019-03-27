@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "module": "none",
+    "target": "es5",
+    "outDir": "../wwwroot/js",
+    "moduleResolution": "node"
+  },
+  "files": [
+    "Ajax.ts",
+    "CompletedJobs.ts",
+    "Pagination.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": true
+}

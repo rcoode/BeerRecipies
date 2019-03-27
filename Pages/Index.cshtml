@@ -1,0 +1,18 @@
+﻿@page
+@model YesSql.Pages.IndexModel
+@{
+    Layout = "/pages/shared/_Layout.cshtml";
+}
+
+<table class="table">
+    @foreach (var recipie in Model.Recipies)
+    {
+    <tr>
+        <td><a href="/recipie/@recipie.Id">@recipie.Name</a></td>
+        <td>@recipie.Description</td>
+        <td>@recipie.Volume</td>
+        <td>@recipie.FirstBrewed</td>
+        <td>@recipie.FoodPairing</td>
+    </tr>
+    }
+</table>

@@ -1,0 +1,23 @@
+﻿@model YesSql.ViewModels.Interfaces.IPaginationViewModel
+
+<nav class="navbar navbar-light bg-secondary" id="pagination-search-bar" data-total-pages="@Model.TotalPages">
+    <form class="form-inline">
+        <a href="@Model.PrevUrl" class="btn btn-outline-info my-2 my-sm-0 @(Model.Bof ? "disabled" : "active")" id="previous-btn">
+            <i class="fas fa-chevron-left"></i>
+        </a>&nbsp;
+        <span class="text-light">
+            Page
+            <input class="form-control mr-sm-1" style="width:60px" type="text" readonly id="current-page-label" value="@Model.CurrentPage" />
+            of
+            <input class="form-control mr-sm-1" style="width:60px" type="text" readonly id="total-pages-label" value="@Model.TotalPages" />
+        </span>&nbsp;
+        <a href="@Model.NextUrl" class="btn btn-outline-info my-2 my-sm-0 @(Model.Eof ? "disabled" : "active")" id="next-btn">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </form>
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" name="tag" placeholder="Search" aria-label="Search" id="search-input" value="@Model.Tag">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="search-btn">Search</button>
+    </form>
+</nav>

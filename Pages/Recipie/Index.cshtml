@@ -1,0 +1,14 @@
+﻿@page "/recipie/{@id}"
+@{
+    Layout = "/pages/shared/_Layout.cshtml";
+}
+@model YesSql.Pages.CompletedJob.IndexModel
+
+@await Html.PartialAsync("NavSearch")
+
+<table class="table table-sm">
+    <tr>
+        <td>Name</td>
+        <td>@Model.Recipie.Name</td>
+    </tr>
+</table>

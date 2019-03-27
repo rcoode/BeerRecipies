@@ -1,0 +1,18 @@
+﻿@page "/recipies"
+@{
+    Layout = "/pages/shared/_Layout.cshtml";
+}
+@model YesSql.Pages.CompletedJobs.IndexModel
+
+@await Html.PartialAsync("NavSearch")
+
+<div id="paged-list-container" class="table-responsive">
+    @await Html.PartialAsync("Page", Model.DataPage)
+</div>
+
+
+@section scripts{
+    <script src="~/js/Ajax.js"></script>
+    <script src="~/js/Pagination.js"></script>
+    <script src="~/js/CompletedJobs.js"></script>
+}

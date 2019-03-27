@@ -1,0 +1,26 @@
+﻿@model List<YesSql.Models.BrewDog.Recipie>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Volume</th>
+            <th scope="col">Attenuation Level</th>
+            <th scope="col">Boil Volume</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var recipie in Model)
+        {
+        <tr>
+            <td>@recipie.Id</td>
+            <td>@recipie.Name</td>
+            <td>@recipie.Volume</td>
+            <td>@recipie.AttenuationLevel</td>
+            <td>@recipie.BoilVolume</td>
+            <td>@recipie.Description</td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+{
+  "name": "yessql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bootbox": "^4.4.36",
+    "@types/bootstrap": "^4.3.0",
+    "@types/bootstrap-notify": "^3.1.34",
+    "@types/jquery": "^3.3.29"
+  }
+}
